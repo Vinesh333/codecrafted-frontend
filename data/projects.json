@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "Weather App",
+    "description": "A simple weather forecast app using OpenWeather API.",
+    "link": "https://github.com/vinesh/weather-app"
+  },
+  {
+    "id": 2,
+    "title": "Task Manager",
+    "description": "A full-stack task manager with REST API support.",
+    "link": "https://github.com/vinesh/task-manager"
+  }
+]
