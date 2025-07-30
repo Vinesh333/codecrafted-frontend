@@ -1,4 +1,3 @@
-// src/components/Projects.jsx
 import React from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
@@ -9,13 +8,13 @@ const projects = [
     image: "/assets/projects/portfolio.png",
     description:
       "A fully responsive developer portfolio built with React and Tailwind CSS. It features animations using Framer Motion and dark mode support.",
-    github: "https://github.com/yourusername/portfolio",
-    demo: "https://yourdomain.com",
+    github: "https://github.com/Vinesh333/codecrafted-frontend",
+    demo: "https://codecrafted-frontend.vercel.app/", 
     tech: ["React", "Tailwind", "Framer Motion"],
     highlights: [
       "Built with reusable components for scalability",
       "Responsive UI with dark/light mode toggle",
-      "Deployed using Netlify",
+      "Deployed using Vercel",
     ],
   },
   {
@@ -23,8 +22,8 @@ const projects = [
     image: "/assets/projects/ecommerce.png",
     description:
       "A full-stack MERN e-commerce application featuring authentication, Stripe integration, and an admin dashboard.",
-    github: "https://github.com/yourusername/ecommerce",
-    demo: "https://ecommerce-demo.com",
+    github: "https://github.com/Vinesh333/trade-trail-front",
+    demo: "https://trade-trail-front.vercel.app/", 
     tech: ["MERN", "Stripe", "Redux"],
     highlights: [
       "Real-time cart and checkout system",
@@ -37,8 +36,8 @@ const projects = [
     image: "/assets/projects/blog.png",
     description:
       "A feature-rich blogging platform that supports rich text editing, image uploads, and user authentication.",
-    github: "https://github.com/yourusername/blog-platform",
-    demo: "https://blog-demo.com",
+    github: "https://github.com/Vinesh333/blog-forge",
+    demo: "https://blog-forge-five.vercel.app/",             
     tech: ["React", "Node.js", "MongoDB"],
     highlights: [
       "Built-in Markdown support and WYSIWYG editor",
@@ -151,34 +150,33 @@ const Projects = () => {
       </div>
 
       {/* 📚 Learning Resources */}
-<div className="mt-20 px-6 max-w-7xl mx-auto">
-  <motion.div
-    className="flex flex-col md:flex-row items-start md:items-center justify-between md:gap-6"
-    initial={{ opacity: 0, y: 20 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.6 }}
-  >
-    <h3 className="text-2xl font-bold text-indigo-500 mb-4 md:mb-0">
-      Learning Resources That Helped Me
-    </h3>
+      <div className="mt-20 px-6 max-w-7xl mx-auto">
+        <motion.div
+          className="flex flex-col md:flex-row items-start md:items-center justify-between md:gap-6"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <h3 className="text-2xl font-bold text-indigo-500 mb-4 md:mb-0">
+            Learning Resources That Helped Me
+          </h3>
 
-    <ul className="list-disc list-inside text-sm text-gray-700 dark:text-gray-300 space-y-2 md:space-y-0 md:space-x-6 flex flex-col md:flex-row md:items-center">
-      {resources.map((r, i) => (
-        <li key={i} className="md:list-none">
-          <a
-            href={r.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-indigo-600 dark:text-indigo-400 underline"
-          >
-            {r.name}
-          </a>
-        </li>
-      ))}
-    </ul>
-  </motion.div>
-</div>
-
+          <ul className="list-disc list-inside text-sm text-gray-700 dark:text-gray-300 space-y-2 md:space-y-0 md:space-x-6 flex flex-col md:flex-row md:items-center">
+            {resources.map((r, i) => (
+              <li key={i} className="md:list-none">
+                <a
+                  href={r.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-indigo-600 dark:text-indigo-400 underline"
+                >
+                  {r.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </motion.div>
+      </div>
     </section>
   );
 };
