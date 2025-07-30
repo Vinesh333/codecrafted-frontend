@@ -10,7 +10,7 @@ const Footer = () => {
         {/* Social Icons */}
         <div className="flex gap-5 text-xl">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/Vinesh333"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
@@ -19,7 +19,7 @@ const Footer = () => {
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/in/yourprofile"
+            href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
